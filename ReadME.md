@@ -52,7 +52,7 @@ wget -c https://mms-res.cdn.bcebos.com/cmake-3.10.3-Linux-x86_64.tar.gz && \
 onnx -> paddlelite
 1. [x2paddle](https://www.paddlepaddle.org.cn/lite/develop/user_guides/model_optimize_tool.html)
 x2paddle --framework=onnx --model=onnx_model.onnx --save_dir=pd_model --to_lite=True --lite_valid_places=arm --lite_model_type=naive_buffer
-> 但不知道執行到 lite 會出錯，所以只好再多做一步
+> 但因為不知名的原因，執行到 lite 會出錯，所以只好再多做一步
 
 2. [paddle_lite_opt](https://github.com/PaddlePaddle/Paddle-Lite/blob/develop/docs/user_guides/opt/opt_python.md)
 ```shell
